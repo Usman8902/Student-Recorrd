@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/student_card_layout"
-    android:layout_width="match_parent"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:layout_marginLeft="5dp"
     android:layout_marginTop="10dp"
     android:layout_marginRight="5dp"
     android:layout_marginBottom="10dp"
-    android:background="#335D80"
-    android:backgroundTint="#219EAE"
+    android:background="#95F376"
+    android:backgroundTint="#B7F489"
     android:padding="12dp">
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Student NAME"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,20 +29,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Student ROLLNO"
-        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/student_card_name_field" />
 
     <TextView
-        android:id="@+id/student_card_age_field"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
         android:text="Age"
-        android:textColor="#D32F2F"
-        app:layout_constraintStart_toEndOf="@+id/student_card_name_field"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_card_rollno_field" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

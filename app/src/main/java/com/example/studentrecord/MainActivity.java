@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     Button btn1;
     Button btn2;
+    Button btn3;
+    Button btn4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         btn=findViewById(R.id.button2);
         btn1=findViewById(R.id.button3);
         btn2=findViewById(R.id.button5);
+       btn3 = findViewById(R.id.button6);
+       btn4 = findViewById(R.id.button);
 
         String url = "https://github.com/Usman8902/Student-Recorrd";
         Intent i= new Intent(Intent.ACTION_VIEW);
@@ -36,7 +40,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(moveActivity);
             }
         });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent moveActivity = new Intent(MainActivity.this, InsertDailyTask.class);
+                startActivity(moveActivity);
+            }
+        });
 
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent moveActivity = new Intent(MainActivity.this, ShowTaskActivity.class);
+                startActivity(moveActivity);
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener()
         {
             @Override
